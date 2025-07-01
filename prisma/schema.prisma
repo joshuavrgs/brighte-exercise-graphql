@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Lead {
+  id        Int           @id @default(autoincrement())
+  createdAt DateTime      @default(now())
+  name      String
+  email     String
+  mobile    String
+  postcode  Int
+  services  LeadService[] @relation("LeadToService")
+}
+
+model LeadService {
+  id    Int    @id @default(autoincrement())
+  type  String @unique
+  leads Lead[] @relation("LeadToService")
+}
