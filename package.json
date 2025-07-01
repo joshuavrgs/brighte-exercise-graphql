@@ -2,12 +2,12 @@
   "name": "brighte-exercise-graphql",
   "version": "1.0.0",
   "description": "this repository is for the technical take home exercise by Brigthe",
-  "main": "src/index.ts",
+  "main": "index.ts",
   "scripts": {
     "start": "ts-node ./src/index.ts",
     "dev": "nodemon --watch src --exec ts-node ./src/index.ts",
-    "seed": "ts-node prisma/seed.ts",
-    "test": "jest --config jest.config.ts ./src/__test__"
+    "test": "jest --config jest.config.ts ./src/__test__",
+    "seed": "ts-node prisma/seed.ts"
   },
   "keywords": [],
   "author": "",
