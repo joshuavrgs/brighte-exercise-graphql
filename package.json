@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "this repository is for the technical take home exercise by Brigthe",
   "main": "src/index.ts",
-  "type": "module",
   "scripts": {
     "start": "ts-node ./src/index.ts",
     "dev": "nodemon --watch src --exec ts-node ./src/index.ts",
