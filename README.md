@@ -24,6 +24,8 @@ During the interview you will be asked to give a tour of your completed work, ex
 solution. We will ask you to make changes to your solution to suit additional requirements. It will be important for you to be able to explain
 what you have created.
 
+---
+
 # GraphQL API
 
 A GraphQL API built with **TypeScript**, **Apollo Server**, and **Prisma (SQLite)** to manage customer interest in the "Brighte Eats" product. It allows users to register their interest in services (delivery, pick-up, payment) and lets administrators query all or individual lead.
